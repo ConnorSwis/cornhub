@@ -1,0 +1,9 @@
+{% extends 'template.html' %}
+{% block body %}
+
+<div class="main-image">
+    <h1>{{ title }}</h1>
+    <img src="{{ url_for('static', filename='pictures/'+image) }}" alt="{{ image }}">
+</div>
+
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'template.html' %}
+{% block body %}
+<h1>Home</h1>
+<div class="grid-container">
+{% for image in images %}
+    <div>
+        <a href="{{ image }}">
+        <img src="{{ url_for('static', filename='pictures/'+image) }}" alt="{{ image }}">
+        {{ image }}</a>
+    </div>
+{% endfor %}
+{% endblock %}
