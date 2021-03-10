@@ -14,7 +14,7 @@ def index():
 def about():
     return render_template('about.html', title='About')
 
-@app.route('/image/<string:image>')
+@app.route('/<string:image>')
 def picture(image):
     return render_template('picture.html', title=image[:-4], image=image)
 
