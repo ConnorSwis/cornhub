@@ -9,6 +9,7 @@ Alright I'm done.
 
 I used the Flask framework in Python to get this working and built a Docker image to run it.
 
+[Cornhub](picture.png)
 
 ## Running CornHub
 Just run one command to get CornHub running:
